@@ -1,6 +1,7 @@
 let menu = document.querySelector('.fa-bars');
 let navbar = document.querySelector('.navbar');
 let header = document.querySelector('#header');
+let topSite = document.getElementById('top')
 
 menu.addEventListener('click',function(){
     menu.classList.toggle('fa-times');
@@ -14,77 +15,12 @@ window.addEventListener('scroll',function(){
 
 
 
+topSite.addEventListener('click' , function(){
+    // window.scrollTo(0,0)
 
-// sections
-
-
-// const sections = document.querySelectorAll('section')
-
-// function scrollActive(){
-//     const scrollY = window.pageYOffset
-
-//     sections.forEach(current =>{
-//         const sectionHeight = current.offsetHeight,
-//               sectionTop = current.offsetTop - 58,
-//               sectionId = current.getAttribute('id')
-
-//         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-//             document.querySelector('#home' + sectionId + ']').classList.add('active-link')
-//         }else{
-//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-//         }
-//     })
-// }
-// window.addEventListener('scroll', scrollActive)
-
-// function scrollActive(){
-//     const scrollY = window.pageYOffset
-
-//     sections.forEach(current =>{
-//         const sectionHeight = current.offsetHeight,
-//               sectionTop = current.offsetTop - 58,
-//               sectionId = current.getAttribute('id')
-
-//         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-//             document.querySelector('#about' + sectionId + ']').classList.add('active-link')
-//         }else{
-//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-//         }
-//     })
-// }
-// window.addEventListener('scroll', scrollActive)
-
-// function scrollActive(){
-//     const scrollY = window.pageYOffset
-
-//     sections.forEach(current =>{
-//         const sectionHeight = current.offsetHeight,
-//               sectionTop = current.offsetTop - 58,
-//               sectionId = current.getAttribute('id')
-
-//         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-//             document.querySelector('#Services' + sectionId + ']').classList.add('active-link')
-//         }else{
-//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-//         }
-//     })
-// }
-// window.addEventListener('scroll', scrollActive)
-
-// function scrollActive(){
-//     const scrollY = window.pageYOffset
-
-//     sections.forEach(current =>{
-//         const sectionHeight = current.offsetHeight,
-//               sectionTop = current.offsetTop - 58,
-//               sectionId = current.getAttribute('id')
-
-//         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-//             document.querySelector('#support-us' + sectionId + ']').classList.add('active-link')
-//         }else{
-//             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-//         }
-//     })
-// }
-// window.addEventListener('scroll', scrollActive)
-
+    window.scrollTo({
+        top : 0,
+        left : 0,
+        behavior : "smooth"
+    });
+} ) 

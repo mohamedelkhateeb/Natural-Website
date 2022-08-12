@@ -49,6 +49,26 @@ li {
     list-style: none;
 }
 
+.top {
+    background: red;
+    position: fixed;
+    right: 40px;
+    top: 85%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.top i {
+    transform: translateY(69%);
+    font-size: 2rem;
+    color: white;
+}
+
 /* Header Section Start*/
 
 header {
